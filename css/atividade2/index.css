@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 400px;
+    height: 250px;
+    background-color: aqua;
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 10px 40px 10px 40px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+}
+
+.bola{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgb(184, 184, 31);
+    border: 3px solid black;
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    z-index: 10;
+}
+
+.caixa{
+    width: 200px;
+    height: 250px;
+    background-color: rgb(196, 58, 58);
+    padding: 20px;
+    border: 3px solid black;
+    border-left: 10px solid black;
+    box-shadow:0 4px 12px rgb(0, 0, 0, 0.6);
+}
+
+@media (max-width: 600px){
+    .corpo{
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .bola, .box, .caixa{
+        width: 90%;
+        height: auto;
+    }
+}

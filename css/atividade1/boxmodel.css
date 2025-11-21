@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 149, 248);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 2px solid;
+    padding: 20px;
+    margin: 10px;
+}
+
+.boxdois{
+    width: 250px;
+    height: 150px;
+    background-color: rgb(45, 187, 26);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow:0 4px 8px rgb(0, 0, 0, 0.2);
+}
+
+.boxtreis{
+    width: 300px;
+    height: 120px;
+    background-color: rgb(214, 214, 32);
+    border: 5px solid red;
+    padding: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+/*Aqui elas ja ficam lateralizada quando integro o display flex novamente*/
+
+.caixas{
+    display: flex;
+    justify-content: space-around;
+}
