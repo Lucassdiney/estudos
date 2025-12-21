@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Conteudo da pagina*/
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(225,0,0);
+    background: linear-gradient(135deg, rgba(225,0,0,1) 0%, rgba(225,225,0,1) 100%);
+}
+
+/*Caixinha do Login*/
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: #fff;
+    margin: 100px auto;
+    border-radius: 25px;
+    color: black;
+    height: 60%;
+    width: 30%;
+    padding-top: 2rem ;
+}
+
+/*Titulo*/
+
+h1{
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+
+/*Usuario e senha*/
+
+p{
+    padding: 1rem 0;
+}
+
+/*As congigurações dos inputs*/
+
+input{
+    width: 80%;
+    border: none;
+    font-size: 1.3rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+    box-shadow: inset 0px -3px 0px 0px rgba(187,187,187,0.2);
+    transition: box-shadow 0.2s ease-in;
+}
+
+input:focus{
+    outline: 0;
+    box-shadow: inset 0px -3px 0px 0px rgba(255, 0, 0, 0.7);
+}
+
+/*Ao tirar o mouse no input o texto aparece*/
+
+input::-webkit-input-placeholder{
+  opacity: 1;
+  transition: opacity 0.25s ease-out;
+}
+
+/*Ao passar o mouse no input o texto some*/
+
+input:hover::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder{
+  opacity: 0;
+}
+
+/*Botão*/
+
+button{
+    border-radius: 25px;
+    width: 80%;
+    height: 40px;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 700;
+    background: rgb(225,0,0);
+    background: linear-gradient(135deg, rgba(225,0,0,1) 0%, rgba(225,225,0,1) 100%);
+    cursor: pointer;
+    border: 0;
+    margin: 20px 0;
+    transition: transform 0.2s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+/*Frase do final*/
+
+span{
+    padding-bottom: 30px;
+}
+
+/*Responsividade*/
+
+@media(max-width: 480px){
+    h1{
+        font-size: 1.5rem;
+    }
+
+    input,button{
+    font-size: 1rem;
+    }
+}
+@media(min-width:1024px){
+    .box{
+        max-width: 450px;
+    }
+}
