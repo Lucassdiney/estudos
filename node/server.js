@@ -1,8 +1,9 @@
-const http = require('http');
+require
 
-const server = http.createServer((req, res) => {
-    res.end('Hello world 2');
+const server = createServer((req, res) => {
+    Response.end('Hello world');
 });
 
-server.listen(3000);
-console.log('Olha no navegador!')
+server.listen(3000, () => {
+    console.log('Server: http://localhost:3000')
+})
